@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 0 35px;
 }
 .wrapper {
   max-width: 1200px;
@@ -48,4 +49,17 @@ body {
   object-fit: cover;
   margin-left: 14px;
   width: calc(100% / 3);
+}
+.carousel img:first-child {
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .carousel img {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .carousel img {
+    width: 100%;
+  }
 }
